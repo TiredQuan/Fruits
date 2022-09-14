@@ -11,13 +11,13 @@ Waterfall (400)
 500
 400 
 ## Font size
+96px (h1 strong) 64px(mobile)
+48px (h1) 32px (mobile)
+40px (h1 small) 26px(mobile)
+26px (header) 17px (mobile)
 
-48px (h1)
-40px (h1 small)
-26px (header)
 
-
-31px
+31px | 21px (mobile)
 
 18px
 17px 
@@ -37,7 +37,7 @@ Waterfall (400)
 
 #6A231F (headings)
 #A0A0A0 (heading common)
-
+#026B3F (small)
 
 #F59334 (active)(button)(card BG)
 #686868 (inactive)
