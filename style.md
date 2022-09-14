@@ -38,7 +38,7 @@ Waterfall (400)
 #6A231F (headings)
 #A0A0A0 (heading common)
 #026B3F (small)
-
+#FFF0E0 (fruitcard)
 #F59334 (active)(button)(card BG)
 #686868 (inactive)
 #FF6D6D(price)

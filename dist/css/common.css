@@ -114,9 +114,14 @@ small{
 .fit{
     width: fit-content;
 }
-
+.heading-family{
+    font-family: var(--headings);
+}
 .card-bg{
     background-color: #F59334;
+}
+.fruit-card{
+    background-color: #FFF0E0;
 }
 
 
@@ -125,16 +130,16 @@ small{
 ul>li{
     list-style: none;
 }
-.navbar-nav .nav-link{
+.navbar-nav .nav-link, .nav-item>.nav-link{
     color: #686868 !important;
 }
-.active>.nav-link{
+.active>.nav-link, .nav-item>.active{
     color: #F59334 !important;
 }
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover, .nav-item>.nav-link:hover{
     color: #303030 !important;
 }
-.active>.nav-link:hover{
+.active>.nav-link:hover, .nav-item>.active:hover{
     color: #8f561d !important;
 }
 nav  div > ul{
@@ -156,7 +161,7 @@ nav div> ul>li>a:hover{
   
   @keyframes bounce {
     50% {
-      transform: translateY(25%);
+      transform: translateY(-15%);
     }
   }
 
