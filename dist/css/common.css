@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-Regular.ttf') format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-Medium.ttf') format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-SemiBold.ttf') format("ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-Bold.ttf') format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Waterfall";
+    src: url('/dist/font/Waterfall-Regular.ttf') format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "JosefinSans";
+    src: url('/dist/font/JostfinSans-Medium.ttf') format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "JosefinSans";
+    src: url('/dist/font/JostfinSans-Semibold.ttf') format("ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root{
+    --headings: 'JosefunSans', sans-serif;
+    --common: 'Nunito', sans-serif;
+    --heading-small:'Waterfall', sans-serif;
+}
+
+.f-weight-400{
+    font-weight: 400;
+}
+.f-weight-500{
+    font-weight: 500;
+}
+.f-weight-600{
+    font-weight: 600;
+}
+.f-weight-700{
+    font-weight: 700;
+}
+
+.f-size-48{
+    font-size: 48px;
+}
+.f-size-40{
+    font-size: 40px;
+}
+.f-size-31{
+    font-size: 31px;
+}
+.f-size-26{
+    font-size: 26px;
+}
+.f-size-18{
+    font-size: 18px;
+}
+.f-size-17{
+    font-size: 17px;
+}
+.f-size-16{
+    font-size: 16px;
+}
+.f-size-15{
+    font-size: 15px;
+}
+.f-size-14{
+    font-size: 14px;
+}
+.f-size-13{
+    font-size: 13px;
+}
+.f-size-12{
+    font-size: 12px;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+}

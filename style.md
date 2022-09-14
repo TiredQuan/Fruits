@@ -31,3 +31,14 @@ Waterfall (400)
 ## Icon width
 
 24x24
+
+
+## Colors
+
+#6A231F (headings)
+#A0A0A0 (heading common)
+
+
+#F59334 (active)(button)(card BG)
+#686868 (inactive)
+#FF6D6D(price)
