@@ -102,6 +102,10 @@ small{
 .icon{
     font-size: 24px;
 }
+.icon2{
+    width: 30px;
+    height: 30px;
+}
 .heading-color{
     color: #6A231F;
 }
@@ -110,6 +114,9 @@ small{
 }
 .heading-common-color{
     color: #A0A0A0;
+}
+.flash-color{
+    color: #FCDC66;
 }
 .fit{
     width: fit-content;
@@ -123,18 +130,36 @@ small{
 .fruit-card{
     background-color: #FFF0E0;
 }
+.footer-card{
+    background-color: #026B3F;
+}
 
 .btn-custom-color{
     border: 1px solid #F59334;
     color: #F59334;
 }
-
+.btn-custom-color2{
+    background-color: #F59334;
+}
+.btn-custom-color2:hover{
+    background-color: #8f561d;   
+}
+.seperate-footer{
+    margin-bottom: 250px;
+}
+.footer-trick{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -175px;
+}
 .custom-color{
     color: #F59334;
 }
 a.custom-color:hover{
     color: #8f561d !important;
 }
+
 
 
 ul>li{
@@ -196,6 +221,7 @@ nav div> ul>li>a:hover{
     .img-sm{
         display: none;
     }
+
     .f-size-96{
         font-size: 64px;
     }
@@ -213,14 +239,22 @@ nav div> ul>li>a:hover{
     }
 }
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
 
 }
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
+@media (max-width: 992px) {
+    .footer-trick{
+        position: inherit;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    .seperate-footer{
+        margin-bottom: 0;
+    }
  }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
 
 }
