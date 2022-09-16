@@ -178,6 +178,18 @@ nav div> ul>li>a:hover{
 
 
 
+.tabcontent {
+      display: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) { 
