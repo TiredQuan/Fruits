@@ -124,7 +124,17 @@ small{
     background-color: #FFF0E0;
 }
 
+.btn-custom-color{
+    border: 1px solid #F59334;
+    color: #F59334;
+}
 
+.custom-color{
+    color: #F59334;
+}
+a.custom-color:hover{
+    color: #8f561d !important;
+}
 
 
 ul>li{
