@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url('/dist/font/Nunito-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Waterfall";
+    src: url('/dist/font/Waterfall-Regular.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Josefin Sans";
+    src: url('/dist/font/JosefinSans-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Josefin Sans";
+    src: url('/dist/font/JosefinSans-Semibold.ttf');
+    font-weight: 600;
+}
+
+:root{
+    --headings: "Josefin Sans", sans-serif;
+    --common: "Nunito", sans-serif;
+    --heading-small:"Waterfall", sans-serif;
+}
+
+body{
+    font-family: var(--common);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--headings);
+}
+small{
+    font-family: var(--heading-small);
+}
+
+.f-weight-400{
+    font-weight: 400;
+}
+.f-weight-500{
+    font-weight: 500;
+}
+.f-weight-600{
+    font-weight: 600;
+}
+.f-weight-700{
+    font-weight: 700;
+}
+
+.f-size-96{
+    font-size: 96px;
+}
+.f-size-48{
+    font-size: 48px;
+}
+.f-size-40{
+    font-size: 40px;
+}
+.f-size-31{
+    font-size: 31px;
+}
+.f-size-26{
+    font-size: 26px;
+}
+.f-size-18{
+    font-size: 18px;
+}
+.f-size-17{
+    font-size: 17px;
+}
+.f-size-16{
+    font-size: 16px;
+}
+.f-size-15{
+    font-size: 15px;
+}
+.f-size-14{
+    font-size: 14px;
+}
+.f-size-13{
+    font-size: 13px;
+}
+.f-size-12{
+    font-size: 12px;
+}
+.icon{
+    font-size: 24px;
+}
+.heading-color{
+    color: #6A231F;
+}
+.small-color{
+    color: #026B3F;
+}
+.heading-common-color{
+    color: #A0A0A0;
+}
+.fit{
+    width: fit-content;
+}
+.heading-family{
+    font-family: var(--headings);
+}
+.card-bg{
+    background-color: #F59334;
+}
+.fruit-card{
+    background-color: #FFF0E0;
+}
+
+.btn-custom-color{
+    border: 1px solid #F59334;
+    color: #F59334;
+}
+
+.custom-color{
+    color: #F59334;
+}
+a.custom-color:hover{
+    color: #8f561d !important;
+}
+
+
+ul>li{
+    list-style: none;
+}
+.navbar-nav .nav-link, .nav-item>.nav-link{
+    color: #686868 !important;
+}
+.active>.nav-link, .nav-item>.active{
+    color: #F59334 !important;
+}
+.navbar-nav .nav-link:hover, .nav-item>.nav-link:hover{
+    color: #303030 !important;
+}
+.active>.nav-link:hover, .nav-item>.active:hover{
+    color: #8f561d !important;
+}
+nav  div > ul{
+    width: fit-content;
+}
+nav div> ul>li>a{
+    color: #686868;
+}
+nav div> ul>li>a:hover{
+    color: #303030;
+}
+
+
+
+.pulsate {
+    animation: bounce 1s ease infinite;
+  }
+  
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-15%);
+    }
+  }
+
+
+
+
+.tabcontent {
+      display: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .img-sm{
+        display: none;
+    }
+    .f-size-96{
+        font-size: 64px;
+    }
+    .f-size-48{
+        font-size: 32px;
+    }
+    .f-size-40{
+        font-size: 26px;
+    }
+    .f-size-26{
+        font-size: 17px;
+    }
+    .f-size-31{
+        font-size: 21px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+ }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
