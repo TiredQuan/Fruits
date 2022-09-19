@@ -118,6 +118,9 @@ small{
 .flash-color{
     color: #FCDC66;
 }
+.flash-height{
+    line-height: 19px;
+}
 .fit{
     width: fit-content;
 }
