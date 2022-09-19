@@ -29,5 +29,14 @@ $('.flash-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 4000
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
+  
 })

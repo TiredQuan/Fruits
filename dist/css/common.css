@@ -66,9 +66,6 @@ small{
 .f-size-96{
     font-size: 96px;
 }
-.f-size-64{
-    font-size: 64px;
-}
 .f-size-48{
     font-size: 48px;
 }
@@ -80,6 +77,10 @@ small{
 }
 .f-size-26{
     font-size: 26px;
+}
+
+.f-size-24{
+    font-size: 24px;
 }
 .f-size-18{
     font-size: 18px;
@@ -218,25 +219,6 @@ nav div> ul>li>a:hover{
   }
 
 
-.hero-bg{
-    background-color: #026B3F;
-    height: 172px;
-}
-.hero-bg h1,.hero-bg h2{
-    position: absolute;
-    transform: translate(-50%,-50%);
-}
-.hero-bg h1{
-    left: 47%;
-    top: 50%;
-}
-.hero-bg h2{
-    left: 54%;
-    top: 60%;
-}
-
-
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) { 
@@ -246,9 +228,6 @@ nav div> ul>li>a:hover{
 
     .f-size-96{
         font-size: 64px;
-    }
-    .f-size-64{
-        font-size: 43px;
     }
     .f-size-48{
         font-size: 32px;

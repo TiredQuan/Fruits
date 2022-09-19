@@ -1,482 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/slick/css/slick.css">
-    <link rel="stylesheet" href="dist/slick/css/slick-theme.css">
-    <link rel="stylesheet" href="dist/css/common.css">
-    <title>T&A Fruits</title>
-    <script src="https://kit.fontawesome.com/8d43c58fe5.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/slick/css/slick.css">
+  <link rel="stylesheet" href="dist/slick/css/slick-theme.css">
+  <link rel="stylesheet" href="dist/css/common.css">
+  <link rel="stylesheet" href="dist/css/styleIndex.css">
+  <title>T&A Fruits</title>
+  <script src="https://kit.fontawesome.com/8d43c58fe5.js" crossorigin="anonymous"></script>
+  <style>
+    /* CSS CHO SlIDER FLASH SALE */
+    .flash-slider {
+      position: relative;
+    }
+
+
+    .flash-slider .slick-prev {
+      position: absolute;
+      top: 10px;
+      left: 460px;
+      z-index: 999;
+    }
+
+    .flash-slider .slick-next {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      z-index: 999;
+    }
+
+
+
+    .flash-slider .slick-prev:before {
+      content: url("./dist/images/ArrowLeft.png");
+      color: red;
+      /* font-size: 30px; */
+    }
+
+    .flash-slider .slick-next:before {
+      content: url("./dist/images/ArrowRight.png");
+      color: red;
+      /* font-size: 30px; */
+    }
+    /* RESPONSIVE VE CHUNG TOI */
+    @media screen and (max-width: 991px) {
+        .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+    }
+  </style>
 </head>
+
 <body>
-<div>
+  <div>
     <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light mb-5">
-            <a class="navbar-brand" href="#"><img src="dist/images/logofruits-01.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="mobileMenu">
-                <ul class="navbar-nav m-auto m-lg-0 text-center">
-                <li class="nav-item active mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Giới thiệu</a>
-                </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Cửa hàng</a>
-                </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Liên hệ</a>
-                </li>
-                </ul>
-                <ul class="list-group list-group-horizontal my-2 my-lg-0 ml-lg-auto mr-lg-0 mx-auto">
-                    <li><a href="#"><i class="icon mx-3 fas fa-search"></i></a></li>
-                    <li><a href="#"><i class="icon mx-3 far fa-heart"></i></a></li>
-                    <li><a href="#"><i class="icon mx-3 far fa-user"></i></a></li>
-                    <li><a href="#"><i class="icon mx-3 fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </div>
-            </nav>
+      <nav class="navbar navbar-expand-lg navbar-light mb-5">
+        <a class="navbar-brand" href="#"><img src="dist/images/logofruits-01.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+          aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mobileMenu">
+          <ul class="navbar-nav m-auto m-lg-0 text-center">
+            <li class="nav-item active mx-lg-2">
+              <a class="nav-link f-weight-700" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-lg-2">
+              <a class="nav-link f-weight-700" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item mx-lg-2">
+              <a class="nav-link f-weight-700" href="#">Cửa hàng</a>
+            </li>
+            <li class="nav-item mx-lg-2">
+              <a class="nav-link f-weight-700" href="#">Liên hệ</a>
+            </li>
+          </ul>
+          <ul class="list-group list-group-horizontal my-2 my-lg-0 ml-lg-auto mr-lg-0 mx-auto">
+            <li><a href="#"><i class="icon mx-3 fas fa-search"></i></a></li>
+            <li><a href="#"><i class="icon mx-3 far fa-heart"></i></a></li>
+            <li><a href="#"><i class="icon mx-3 far fa-user"></i></a></li>
+            <li><a href="#"><i class="icon mx-3 fas fa-shopping-basket"></i></a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="container seperate-footer">
-          <div class="slick-slider">
-            <div>
-              <div class="row flex-row-reverse justify-content-sm-end text-center text-sm-left">
-                <div class="col-sm-4 d-none d-lg-block">
-                  <h1 class="f-size-48 heading-color f-weight-600">T&A <small class="f-size-40 small-color">store</small><br><span class="f-size-96">Fruits</span></h1>
-                  <p class="f-size-17 f-weight-400">Thương hiệu bán lẻ, cung cấp hoa quả & trái cay nhập khẩu từ Mỹ, Úc, New Zealand...</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="dist/images/heading27.png" alt="">
-              </div>
-              <div class="col-sm-3 mt-5 d-none d-lg-block">
-                  <h2 class="f-size-26 f-weight-500 mt-5 heading-color">Lựu thái</h2>
-                  <p class="f-size-17 heading-common-color f-weight-400">Loại trái cây mọng nước có vẻ đẹp rực rỡ và hấp dẫn</p>
-              </div>
-              </div>
+      <div class="slick-slider">
+        <div>
+          <div class="row flex-row-reverse justify-content-sm-end text-center text-sm-left">
+            <div class="col-sm-4 d-none d-lg-block">
+              <h1 class="f-size-48 heading-color f-weight-600">T&A <small
+                  class="f-size-40 small-color">store</small><br><span class="f-size-96">Fruits</span></h1>
+              <p class="f-size-17 f-weight-400">Thương hiệu bán lẻ, cung cấp hoa quả & trái cay nhập khẩu từ Mỹ, Úc, New
+                Zealand...</p>
             </div>
-            <div>
-              <div class="row flex-row-reverse justify-content-sm-end text-center text-sm-left">
-                <div class="col-sm-4 d-none d-lg-block">
-                  <h1 class="f-size-48 heading-color f-weight-600">T&A <small class="f-size-40 small-color">store</small><br><span class="f-size-96">Fruits</span></h1>
-                  <p class="f-size-17 f-weight-400">Thương hiệu bán lẻ, cung cấp hoa quả & trái cay nhập khẩu từ Mỹ, Úc, New Zealand...</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="dist/images/Rectangle 27.png" alt="">
-              </div>
-              <div class="col-sm-3 mt-5 d-none d-lg-block">
-                  <h2 class="f-size-26 f-weight-500 mt-5 heading-color">Cam đỏ</h2>
-                  <p class="f-size-17 heading-common-color f-weight-400">Loại trái cây mọng nước có vẻ đẹp rực rỡ và hấp dẫn</p>
-              </div>
-              </div>
+            <div class="col-sm-4">
+              <img src="dist/images/heading27.png" alt="">
+            </div>
+            <div class="col-sm-3 mt-5 d-none d-lg-block">
+              <h2 class="f-size-26 f-weight-500 mt-5 heading-color">Lựu thái</h2>
+              <p class="f-size-17 heading-common-color f-weight-400">Loại trái cây mọng nước có vẻ đẹp rực rỡ và hấp dẫn
+              </p>
             </div>
           </div>
-          <section class="row">
-            <div class="col-lg-6">
-                <div class="d-flex justify-content-between">
-                    <h3 class="heading-color f-weight-500 f-size-18">Flash sale</h3>
-                    <div class="">
-                    </div>
+        </div>
+        <div>
+          <div class="row flex-row-reverse justify-content-sm-end text-center text-sm-left">
+            <div class="col-sm-4 d-none d-lg-block">
+              <h1 class="f-size-48 heading-color f-weight-600">T&A <small
+                  class="f-size-40 small-color">store</small><br><span class="f-size-96">Fruits</span></h1>
+              <p class="f-size-17 f-weight-400">Thương hiệu bán lẻ, cung cấp hoa quả & trái cay nhập khẩu từ Mỹ, Úc, New
+                Zealand...</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="dist/images/Rectangle 27.png" alt="">
+            </div>
+            <div class="col-sm-3 mt-5 d-none d-lg-block">
+              <h2 class="f-size-26 f-weight-500 mt-5 heading-color">Cam đỏ</h2>
+              <p class="f-size-17 heading-common-color f-weight-400">Loại trái cây mọng nước có vẻ đẹp rực rỡ và hấp dẫn
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="row">
+        <div class="col-lg-6 pl-md-0 pr-md-0">
+          <div class="flash-slider">
+            <div class="item">
+              <h3 class="heading-color f-weight-500 f-size-18">Flash sale</h3>
+              <div class="row ml-0 mr-0">
+                <div class="col-sm-5 pl-0 pr-0">
+                  <img class="d-block w-100 h-100" src="dist/images/24.png" alt="">
                 </div>
-                <div class="flash-slider">
-                  <div>
-                    <div class="row">
-                        <div class="col-5 p-0 position-relative">
-                            <img class="w-100 h-100" src="dist/images/24.png" alt="">
-                        </div>
-                        <div class="col card-bg text-white p-4">
-                          <div class="d-flex justify-content-between">
-                            <div class="">
-                              <p class="f-size-14 f-weight-500">CHERY CANADA</p>
-                              <p class="f-size-12 f-weight-400 flash-color">10% OFF</p>
-                            </div>
-                            <p class="f-size-14 f-weight-500">1.850.000đ</p>
-                          </div>
-                          <div class="d-flex justify-content-between">
-                            <p class="my-auto f-size-14 f-weight-500">CHERY CANADA</p>
-                            <button class="btn btn-lg border-white text-white rounded-0 f-size-14 f-weight-500">MUA NGAY</button>
-                          </div>
-                        </div>
+                <div class="col card-bg text-white">
+                  <div class="h-100 py-3 d-flex justify-content-center align-content-center">
+                    <div class="w-50">
+                      <p class="f-weight-500">CHERY CANADA</p>
+                      <p class="f-size-12 f-weight-400 flash-color">10% OFF</p>
+                      <p class="mb-0 mt-4">Đơn vị: Thùng - 5kg</p>
                     </div>
-                  </div>
-                  <di
-                    <div class="row">
-                        <div class="col-5 p-0 position-relative">
-                            <img class="w-100 h-100" src="dist/images/20.png" alt="">
-                        </div>
-                        <div class="col card-bg text-white p-4">
-                          <div class="d-flex justify-content-between">
-                            <div class="">
-                              <p class="f-size-14 f-weight-500">CHERY CANADA</p>
-                              <p class="f-size-12 f-weight-400 flash-color">10% OFF</p>
-                            </div>
-                            <p class="f-size-14 f-weight-500">1.850.000đ</p>
-                          </div>
-                          <div class="d-flex justify-content-between">
-                            <p class="my-auto f-size-14 f-weight-500">CHERY CANADA</p>
-                            <button class="btn btn-lg border-white text-white rounded-0 f-size-14 f-weight-500">MUA NGAY</button>
-                          </div>
-                        </div>
+                    <div class="w-50">
+                      <p class="f-size-18 f-weight-700 text-right">1.850.000đ</p>
+                      <button
+                        class="d-block w-100 mt-5 btn btn-lg border-white text-white rounded-0 f-size-14 f-weight-500">MUA
+                        NGAY</button>
                     </div>
                   </div>
                 </div>
-            </div>
-            <div class="col-lg my-5 my-lg-0">
-                <div class="mx-auto fit">
-                    <img class="pulsate" src="dist/images/Scroll.png" alt="">
+              </div>
+            </div> <!-- .item -->
+            <div class="item">
+              <h3 class="heading-color f-weight-500 f-size-18">Flash sale</h3>
+              <div class="row ml-0 mr-0">
+                <div class="col-sm-5 pl-0 pr-0">
+                  <img class="d-block w-100 h-100" src="dist/images/24.png" alt="">
                 </div>
-            </div>
-          </section>
-        <section class=" my-5">
-            <h4 class="text-center my-5">Về chúng tôi</h4>
-            <div class="row flex-lg-row-reverse">
-                <div class="col-sm-6 p-0">
-                    <img class="w-100" src="dist/images/Frame 5.png" alt="">
-                </div>
-                <div class="col-sm-6 p-0 d-flex flex-column justify-content-center fruit-card">
-                    <div class="my-5">
-                        <p class="f-size-18 f-weight-500 mx-5 heading-family">T&A Fruits</p>
-                        <p class="f-size-17 f-weight-400 mx-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <button class="btn border-dark rounded-0 mx-5">ĐỌC THÊM</button>
+                <div class="col card-bg text-white">
+                  <div class="h-100 py-3 d-flex justify-content-center align-content-center">
+                    <div class="w-50">
+                      <p class="f-weight-500">CHERY CANADA</p>
+                      <p class="f-size-12 f-weight-400 flash-color">10% OFF</p>
+                      <p class="mb-0 mt-4">Đơn vị: Thùng - 5kg</p>
                     </div>
+                    <div class="w-50">
+                      <p class="f-size-18 f-weight-700 text-right">1.850.000đ</p>
+                      <button
+                        class="d-block w-100 mt-5 btn btn-lg border-white text-white rounded-0 f-size-14 f-weight-500">MUA
+                        NGAY</button>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div> <!-- .item -->
+          </div> <!-- .flash-slider -->
+
+        </div>
+        <div class="col-lg-6 my-5 my-lg-0">
+          <div class="mx-auto fit">
+            <img class="pulsate" src="dist/images/Scroll.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class=" my-5">
+        <h4 class="text-center my-5">Về chúng tôi</h4>
+        <div class="row flex-lg-row-reverse">
+          <div class="col-sm-6 p-0">
+            <img class="w-100" src="dist/images/Frame 5.png" alt="">
+          </div>
+          <div class="col-sm-6 p-0 d-flex flex-column justify-content-center fruit-card">
+            <div class="mt-5 mb-3 mb-sm-0">
+              <p class="f-size-18 f-weight-500 mx-5 heading-family">T&A Fruits</p>
+              <p class="line-clamp f-size-17 f-weight-400 mx-5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <button class="btn border-dark rounded-0 mx-5">ĐỌC THÊM</button>
             </div>
-            <div class="row">
-                <div class="col-sm-6 p-0">
-                    <img class="w-100" src="dist/images/composition-delicious-exotic-kiwis 1.png" alt="">
-                    
-                </div>
-                <div class="col-sm-6 p-0 d-flex flex-column justify-content-center fruit-card">
-                    <p class="f-size-17 f-weight-400 m-5">“It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout”</p>
-                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 p-0">
+            <img class="w-100" src="dist/images/composition-delicious-exotic-kiwis 1.png" alt="">
+
+          </div>
+          <div class="col-sm-6 p-0 d-flex flex-column justify-content-center fruit-card">
+            <p class="line-clamp f-size-17 f-weight-400 m-5 mb-0">“It is a long established fact that a reader will be distracted by the
+              readable content of a page when looking at its layout”</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h4 class="text-center my-5">Sản phẩm mới</h4>
+        <ul class="nav mx-auto fit justify-content-center">
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks active" onclick="openCity(event,'tatca')" type="button">Tất cả</a>
+          </li>
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks" onclick="openCity(event,'nho')" type="button">Nho</a>
+          </li>
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks" onclick="openCity(event,'tao')" type="button">Táo</a>
+          </li>
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks" onclick="openCity(event,'cam')" type="button">Cam</a>
+          </li>
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks" onclick="openCity(event,'le')" type="button">Lê</a>
+          </li>
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks" onclick="openCity(event,'luu')" type="button">Lựu</a>
+          </li>
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks" onclick="openCity(event,'hong')" type="button">Hồng</a>
+          </li>
+          <li class="nav-item  m-2">
+            <a class="nav-link tablinks" onclick="openCity(event,'khac')" type="button">Khác</a>
+          </li>
+        </ul>
+        <div class="text-center tabcontent" id="tatca">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
             </div>
-        </section>
-        <section>
-            <h4 class="text-center my-5">Sản phẩm mới</h4>
-            <ul class="nav mx-auto fit justify-content-center">
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks active" onclick="openCity(event,'tatca')" type="button">Tất cả</a>
-                </li>
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks" onclick="openCity(event,'nho')" type="button">Nho</a>
-                </li>
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks" onclick="openCity(event,'tao')" type="button">Táo</a>
-                </li>
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks" onclick="openCity(event,'cam')" type="button">Cam</a>
-                </li>
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks" onclick="openCity(event,'le')" type="button">Lê</a>
-                </li>
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks" onclick="openCity(event,'luu')" type="button">Lựu</a>
-                </li>
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks" onclick="openCity(event,'hong')" type="button">Hồng</a>
-                </li>
-                <li class="nav-item  m-2">
-                  <a class="nav-link tablinks" onclick="openCity(event,'khac')" type="button">Khác</a>
-                </li>
-              </ul> 
-                <div class="text-center tabcontent" id="tatca">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-<div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-<div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-<div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <div class="text-center tabcontent" id="nho">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <div class="text-center tabcontent" id="tao">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">TÁO QUEEN</p>
-                    <p class="custom-color f-size-15">1.250.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">TÁO QUEEN</p>
-                    <p class="custom-color f-size-15">1.250.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">TÁO QUEEN</p>
-                    <p class="custom-color f-size-15">1.250.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">TÁO QUEEN</p>
-                    <p class="custom-color f-size-15">1.250.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <div class="text-center tabcontent" id="cam">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <div class="text-center tabcontent" id="le">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <div class="text-center tabcontent" id="luu">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <div class="text-center tabcontent" id="hong">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-              <div class="text-center tabcontent" id="khac">
-                <div class="row my-5">
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                  <div class="col-lg-3 col-md-6 px-3 text-center">
-                    <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
-                    <p class="f-size-17">CHERY CANADA</p>
-                    <p class="custom-color f-size-15">1.850.000đ</p>
-                    <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
-                    <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
-                  </div>
-                </div>
-                <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
-              </div>
-        </section>
-        <section class="my-5">
-            <h5>Tại sao nên lựa chọn T&A Fruits?</h5>
-            <div class="text-center" id="tatca">
-              <div class="row my-5">
-                <div class="col-lg-3 col-md-6 px-3">
-                  <img src="dist/images/20943941-01.png" class="my-3" alt="">
-                  <p class="f-size-17 f-weight-400">TÙY CHỌN NHẬN HÀNG</p>
-                  <p class="f-size-15 mx-3">phương thức đặt hàng và thanh toán linh hoạt</p>
-                </div>
-<div class="col-lg-3 col-md-6 px-3 text-center">
-                  <img src="dist/images/20943941-02.png" class="my-3" alt="">
-                  <p class="f-size-17 f-weight-400">CHẤT LƯỢNG VƯỢT TRỘI</p>
-                  <p class="f-size-15 mx-3">Cam kết đảm bảo chất lượng sản phẩm và rõ nguồn gốc xuất xứ</p>
-                </div>
-<div class="col-lg-3 col-md-6 px-3 text-center">
-                  <img src="dist/images/20943941-03.png" class="my-3" alt="">
-                  <p class="f-size-17 f-weight-400">GIAO HÀNG TRONG NGÀY</p>
-                  <p class="f-size-15 mx-3">Đơn hàng được đóng gói và giao hàng ngay sau khi xác nhận đơn</p>
-                </div>
-<div class="col-lg-3 col-md-6 px-3 text-center">
-                  <img src="dist/images/20943941-04.png" class="my-3" alt="">
-                  <p class="f-size-17 f-weight-400">HỖ TRỢ 24/7</p>
-                  <p class="f-size-15 mx-3">Sẵn sàng giải quyết vấn đề sau khi nhận ý kiến phản hồi</p>
-                </div>
-              </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="text-center tabcontent" id="nho">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="text-center tabcontent" id="tao">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">TÁO QUEEN</p>
+              <p class="custom-color f-size-15">1.250.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">TÁO QUEEN</p>
+              <p class="custom-color f-size-15">1.250.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">TÁO QUEEN</p>
+              <p class="custom-color f-size-15">1.250.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-2.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">TÁO QUEEN</p>
+              <p class="custom-color f-size-15">1.250.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="text-center tabcontent" id="cam">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="text-center tabcontent" id="le">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="text-center tabcontent" id="luu">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="text-center tabcontent" id="hong">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="text-center tabcontent" id="khac">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/home-pro-1.png" class="my-3 w-100" alt="">
+              <p class="f-size-17">CHERY CANADA</p>
+              <p class="custom-color f-size-15">1.850.000đ</p>
+              <p class="f-size-13">Đơn vị: Thùng - 5kg</p>
+              <button class="btn btn-custom-color f-size-14 w-100 rounded-0 f-weight-500">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+          <a type="button" class="custom-color">XEM THÊM <i class="fas fa-chevron-down"></i></a>
+        </div>
+      </section>
+      <section class="my-5">
+        <h5>Tại sao nên lựa chọn T&A Fruits?</h5>
+        <div class="text-center" id="tatca">
+          <div class="row my-5">
+            <div class="col-lg-3 col-md-6 px-3">
+              <img src="dist/images/20943941-01.png" class="my-3" alt="">
+              <p class="f-size-17 f-weight-400">TÙY CHỌN NHẬN HÀNG</p>
+              <p class="f-size-15 mx-3">phương thức đặt hàng và thanh toán linh hoạt</p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/20943941-02.png" class="my-3" alt="">
+              <p class="f-size-17 f-weight-400">CHẤT LƯỢNG VƯỢT TRỘI</p>
+              <p class="f-size-15 mx-3">Cam kết đảm bảo chất lượng sản phẩm và rõ nguồn gốc xuất xứ</p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/20943941-03.png" class="my-3" alt="">
+              <p class="f-size-17 f-weight-400">GIAO HÀNG TRONG NGÀY</p>
+              <p class="f-size-15 mx-3">Đơn hàng được đóng gói và giao hàng ngay sau khi xác nhận đơn</p>
+            </div>
+            <div class="col-lg-3 col-md-6 px-3 text-center">
+              <img src="dist/images/20943941-04.png" class="my-3" alt="">
+              <p class="f-size-17 f-weight-400">HỖ TRỢ 24/7</p>
+              <p class="f-size-15 mx-3">Sẵn sàng giải quyết vấn đề sau khi nhận ý kiến phản hồi</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="position-relative">
       <section class="container-md row card-bg justify-content-center mx-auto text-center text-white py-4 footer-trick">
@@ -504,10 +563,12 @@
           <h6 class="my-5">ĐĂNG KÝ NHẬN THÔNG BÁO</h6>
           <form action="">
             <div class="form-group mx-5">
-              <div class="row justify-content-center"><label for="email" class="col-sm-6 text-left p-0">Địa chỉ Email</label></div>
+              <div class="row justify-content-center"><label for="email" class="col-sm-6 text-left p-0">Địa chỉ
+                  Email</label></div>
               <div class="row mx-auto justify-content-center">
                 <input type="email" class="rounded-0 form-control col-sm-4" id="email" aria-describedby="emailHelp">
-                <button class="rounded-0 ml-3 p-0 col-sm-2 f-size-14 f-weight-500 btn-custom-color2 border-0 text-white" type="submit">ĐĂNG KÝ</button>
+                <button class="rounded-0 ml-3 p-0 col-sm-2 f-size-14 f-weight-500 btn-custom-color2 border-0 text-white"
+                  type="submit">ĐĂNG KÝ</button>
               </div>
             </div>
           </form>
@@ -519,17 +580,21 @@
             <a href=""><img class="icon2 mx-3" src="dist/images/Instagram.svg" alt=""></a>
           </div>
           <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14889.86305719818!2d105.79381835!3d21.0939893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aaba4176413d%3A0xdc7346286e241f2f!2zTmjDoCBIw6BuZyBC4bq_biBC4bqhYw!5e0!3m2!1sen!2s!4v1663320625042!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14889.86305719818!2d105.79381835!3d21.0939893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aaba4176413d%3A0xdc7346286e241f2f!2zTmjDoCBIw6BuZyBC4bq_biBC4bqhYw!5e0!3m2!1sen!2s!4v1663320625042!5m2!1sen!2s"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
     </footer>
-</div>
+  </div>
 
-    <script src="dist/bootstrap/js/jquery-3.6.1.min.js"></script>
-    <script src="dist/bootstrap/js/popper.min.js"></script>
-    <script src="dist/bootstrap/js/bootstrap.min.js"></script>
-    <script src="dist/slick/js/slick.min.js"></script>
-    <script src="dist/js/script.js"></script>
+  <script src="dist/bootstrap/js/jquery-3.6.1.min.js"></script>
+  <script src="dist/bootstrap/js/popper.min.js"></script>
+  <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+  <script src="dist/slick/js/slick.min.js"></script>
+  <script src="dist/js/script.js"></script>
 </body>
+
 </html>
