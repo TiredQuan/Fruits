@@ -140,6 +140,10 @@ small{
     background-color: #026B3F;
 }
 
+.btn-custom-color{
+    color: #F59334;
+    border: 1px solid #F59334;
+}
 
 .btn-custom-color2{
     background-color: #F59334;
@@ -191,14 +195,13 @@ nav div> ul>li>a:hover{
 }
 
 
-
 .pulsate {
     animation: bounce 1s ease infinite;
-  }
+}
   
-  
+
   @keyframes bounce {
-    50% {
+      50% {
       transform: translateY(-15%);
     }
   }
@@ -213,13 +216,13 @@ nav div> ul>li>a:hover{
   
   /* Go from zero to full opacity */
   @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+      from {opacity: 0;}
+      to {opacity: 1;}
   }
-
-
-.hero-bg{
-    background-color: #026B3F;
+  
+  
+  .hero-bg{
+      background-color: #026B3F;
     height: 172px;
 }
 .hero-bg h1,.hero-bg h2{
@@ -234,8 +237,10 @@ nav div> ul>li>a:hover{
     left: 54%;
     top: 60%;
 }
-.map{
-
+.product-img{
+    object-fit: cover;
+    height: unset;
+    width: 100%;
 }
 .map-iframe{
     width: 100%;
@@ -243,12 +248,40 @@ nav div> ul>li>a:hover{
 }
 
 
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
+
+}
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+    .footer-trick{
+        position: inherit;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    .seperate-footer{
+        margin-bottom: 0;
+    }
+ }
+ /* Medium devices (tablets, 768px and down) */
+ @media (max-width: 768px) { 
+    .product-img{
+        height: 175px;
+        width: 175px;
+    }
+}
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) { 
-
+    .product-img{
+        height: 125px;
+        width: 125px;
+    }
+    
     .map-iframe{
         height: 250px;
-        width: 250px;
+        width: 300px;
     }
 
 
@@ -275,26 +308,6 @@ nav div> ul>li>a:hover{
         font-size: 21px;
     }
 }
-/* Medium devices (tablets, 768px and down) */
-@media (max-width: 768px) { 
-}
-/* Large devices (desktops, 992px and down) */
-@media (max-width: 992px) {
-    .footer-trick{
-        position: inherit;
-        right: 0;
-        left: 0;
-        top: 0;
-    }
-    .seperate-footer{
-        margin-bottom: 0;
-    }
- }
-/* Extra large devices (large desktops, 1200px and down) */
-@media (max-width: 1200px) {
-
-}
-
 
 
 
