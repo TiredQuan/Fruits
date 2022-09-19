@@ -1,0 +1,48 @@
+.hero-bg{
+    background-color: #026B3F;
+    height: 172px;
+}
+.hero-bg h1,.hero-bg h2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.hero-bg h1{
+    left: 47%;
+    top: 50%;
+}
+.hero-bg h2{
+    left: 54%;
+    top: 60%;
+}
+.img-bg{
+    background-color: #F59334;
+}
+.img-bg2{
+    background-color: #026B3F;
+}
+.img-bg img{
+    transform: translate(-20px,20px);
+
+}
+.img-bg2 img{
+    transform: translate(20px,-20px); 
+}
+
+
+@media (max-width: 576px) { 
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .img-bg img, .img-bg2 img{
+        transform: none;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+ }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+}

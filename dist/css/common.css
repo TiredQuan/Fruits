@@ -66,6 +66,9 @@ small{
 .f-size-96{
     font-size: 96px;
 }
+.f-size-64{
+    font-size: 64px;
+}
 .f-size-48{
     font-size: 48px;
 }
@@ -224,6 +227,9 @@ nav div> ul>li>a:hover{
 
     .f-size-96{
         font-size: 64px;
+    }
+    .f-size-64{
+        font-size: 43px;
     }
     .f-size-48{
         font-size: 32px;
