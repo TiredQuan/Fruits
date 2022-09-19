@@ -25,9 +25,9 @@ function openCity(evt, tabName) {
     autoplaySpeed: 4000
 });
 
-$('.flash-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000
-})
+// $('.flash-slider').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     autoplaySpeed: 4000
+// })
