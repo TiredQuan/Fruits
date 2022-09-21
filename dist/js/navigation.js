@@ -75,5 +75,31 @@ $(document).ready(function () {
     $("#user_icon").click(function (e) {
         $(this).toggleClass("active");
         $(".nav_user").fadeToggle();
-    })
+    });
+    $(".nav_user_login").click(function (e) {
+        e.preventDefault();
+        $(".login_modal").slideDown();
+    });
+    $("#login_close").click(function (e) {
+        e.preventDefault();
+        $(".login_modal").slideUp();
+    });
+    $(".nav_user_register").click(function (e) {
+        e.preventDefault();
+        $(".register_modal").slideDown();
+    });
+    $("#register_close").click(function (e) {
+        e.preventDefault();
+        $(".register_modal").slideUp();
+    });
+    $(".redirect_to_register").click(function (e) {
+        e.preventDefault();
+        $(".login_modal").slideUp();
+        $(".register_modal").slideDown();
+    });
+    $(".redirect_to_login").click(function (e) {
+        e.preventDefault();
+        $(".register_modal").slideUp();
+        $(".login_modal").slideDown(); 
+    });
 });

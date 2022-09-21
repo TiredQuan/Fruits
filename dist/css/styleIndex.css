@@ -1,4 +1,9 @@
-    /* CSS CHO SlIDER FLASH SALE */
+html {
+  scroll-behavior: smooth;
+}
+   
+   
+   /* CSS CHO SlIDER FLASH SALE */
     .flash-slider {
         position: relative;
       }
@@ -83,3 +88,8 @@
     width: 14px;
     height: 14px;
 }
+
+.slick-arrow{
+  z-index: 1 !important;
+}
+
