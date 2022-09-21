@@ -192,6 +192,7 @@
     width: 170px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
     display: none;
   }
   
@@ -340,7 +341,7 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(./dist/images/close_cart.png);
+    background-image: url('../images/close_cart.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -654,6 +655,7 @@ nav div> ul>li>a:hover{
   .hero-bg{
       background-color: #026B3F;
     height: 172px;
+    z-index: 1;
 }
 .hero-bg h1,.hero-bg h2{
     position: absolute;

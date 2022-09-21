@@ -5,44 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dist/css/common.css">
     <link rel="stylesheet" href="dist/css/styleAbout.css">
     <title>About Us</title>
-    <script src="https://kit.fontawesome.com/8d43c58fe5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="">
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light mb-5">
-            <a class="navbar-brand" href="#"><img src="dist/images/logofruits-01.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="mobileMenu">
-                <ul class="navbar-nav m-auto m-lg-0 text-center">
-                <li class="nav-item active mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Giới thiệu</a>
-                </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Cửa hàng</a>
-                </li>
-                <li class="nav-item mx-lg-2">
-                    <a class="nav-link f-weight-700" href="#">Liên hệ</a>
-                </li>
-                </ul>
-                <ul class="list-group list-group-horizontal my-2 my-lg-0 ml-lg-auto mr-lg-0 mx-auto">
-                    <li><a href="#"><i class="icon mx-3 fas fa-search"></i></a></li>
-                    <li><a href="#"><i class="icon mx-3 far fa-heart"></i></a></li>
-                    <li><a href="#"><i class="icon mx-3 far fa-user"></i></a></li>
-                    <li><a href="#"><i class="icon mx-3 fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </div>
-            </nav>
+      <header class="container">
+        <!-- header_navbar -->
+  <nav class="header_navbar">
+    <div class="container">
+      <div class="header_nav_inner">
+        <button type="button" class="btn_nav_mobile btn btn_light"><i class="fa-solid fa-bars"></i></button>
+        <h1 class="logo"><a href="#"><img src="./dist/images/logo.png" alt=""></a></h1>
+        <ul class="nav_main_menu">
+          <li class="active">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li>
+            <a href="#">Giới thiệu</a>
+          </li>
+          <li>
+            <a href="#">Cửa hàng</a>
+          </li>
+          <li>
+            <a href="#">Liên hệ</a>
+          </li>
+        </ul>
+        <form action="#" class="header_form_search ml-auto">
+          <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+        </form>
+        <ul class="nav_icon_menu">
+          <li id="search_icon">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li id="user_icon">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <ul class="nav_user">
+              <li>
+                <a href="#">Đăng nhập</a>
+              </li>
+              <li>
+                <a href="#">Đăng ký</a>
+              </li>
+              <li>
+                <a href="#">Đăng xuất</a>
+              </li>
+            </ul>
+          </li>
+          <li id="cart_icon">
+            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+            <span class="item_count">10</span>
+          </li>
+        </ul>
+        <div class="nav_mobile_group d-flex">
+          <button type="button" id="btn_user" class="btn_nav_search btn btn_light">
+            <i class="fa-regular fa-user"></i>
+            <ul class="user_mobile">
+              <li>
+                <a href="#">Đăng nhập</a>
+              </li>
+              <li>
+                <a href="#">Đăng ký</a>
+              </li>
+              <li>
+                <a href="#">Đăng xuất</a>
+              </li>
+            </ul>
+          </button>
+          <button type="button" class="btn_nav_shop btn rounded-circle btn_light"><i
+              class="fa-solid fa-basket-shopping"></i><span class="item_number">1</span></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header_navbar -->
+  
+  <!-- nav_mobile -->
+  <nav class="nav_mobile">
+    <div class="nav_mobile_wrapper">
+      <button type="button" class="btn_close"><i class="fa-regular fa-circle-xmark"></i></button>
+      <form action="#" class="nav_form_search">
+        <input type="text" class="form-control" name="s" placeholder="Tìm kiếm sản phẩm...">
+      </form>
+      <ul class="mobile_menu">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="cart_box">
+    <div class="cart_inner">
+      <button id="close_cart"></button>
+      <h2 class="cart_title text-uppercase">Giỏ hàng</h2>
+      <div class="cart_item_box">
+        <ul class="cart_list">
+          <li>
+            <div class="item">
+              <div class="left_item w-75">
+                <img src="./dist/images/item_cart.png" alt="">
+                <div class="item_info">
+                  <span class="item_name">Chery Canada</span>
+                  <span class="trash_item"><i class="fa-regular fa-trash-can"></i></span>
+                </div>
+
+              </div>
+              <div class="right_item">
+                <p class="price">1.900.000đ</p>
+                <div class="quantity_box">
+                  <button type="button" class="minus">-</button>
+                  <input type="text" class="quantity_item" readonly value="1">
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
+            </div> <!-- .item -->
+          </li>
+          <li>
+            <div class="item">
+              <div class="left_item w-75">
+                <img src="./dist/images/item_cart.png" alt="">
+                <div class="item_info">
+                  <span class="item_name">Chery Canada</span>
+                  <span class="trash_item"><i class="fa-regular fa-trash-can"></i></span>
+                </div>
+              </div>
+              <div class="right_item">
+                <p class="price">1.900.000đ</p>
+                <div class="quantity_box">
+                  <button type="button" class="minus">-</button>
+                  <input type="text" class="quantity_item" readonly value="1">
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
+            </div> <!-- .item -->
+          </li>
+        </ul> <!-- .cart_list -->
+        <p class="cart_box_price d-flex">
+          <span class="title_price">Giá sản phẩm</span>
+          <span class="price ml-auto">3.800.000đ</span>
+        </p>
+        <button type="button" class="btn_order btn w-100 text-uppercase">Đặt hàng</button>
+      </div>
+    </div>
+
+  </div> <!-- cart_box -->
     </header>
+    
     <main class="seperate-footer">
         <section class="hero-bg position-relative w-100">
             <h1 class="f-size-31 text-white">GIỚI THIỆU</h1>
@@ -131,5 +254,6 @@
 <script src="dist/bootstrap/js/jquery-3.6.1.min.js"></script>
 <script src="dist/bootstrap/js/popper.min.js"></script>
 <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="dist/js/navigation.js"></script>
 </body>
 </html>
