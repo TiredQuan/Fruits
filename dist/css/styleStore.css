@@ -17,3 +17,24 @@ input[type=number] {
 .apply{
     width: 80%;
 }
+.heart-like{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 27px;
+  height: 27px;
+  background-color: #D9D9D9;
+  cursor: pointer;
+}
+.icon3{
+  display: block !important;
+}
+.page-link{
+background-color: #E9E9E9;
+border-radius: 1px;
+border: none;
+color: #000;
+}
+.active>.page-link{
+background-color: #F59334 !important;
+}
