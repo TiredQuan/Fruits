@@ -1,0 +1,32 @@
+.gallery-images{
+    width: 14%;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+.gallery-images:hover{
+    opacity: 1;
+}
+.gallery-images:active{
+    border: solid 2px black;
+}
+.gallery-products{
+    height: 350px;
+}
+
+.product-btn{
+    width: 25px;
+    height: 25px;
+}
+.faded{
+    opacity:0.6;
+}
+.hug{
+    height: 34px;
+}
+.buy-btn{
+    width: 157px;
+}
+.cart-btn{
+    width: 245px;
+}

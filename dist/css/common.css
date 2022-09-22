@@ -285,6 +285,9 @@ a {
   border-bottom: 1px solid #555;
   text-decoration: none;
 }
+.mobile_menu li a:hover{
+  color: #8f561d;
+}
 
 @media screen and (max-width: 768px) {
   .header_nav_inner {
@@ -418,7 +421,7 @@ a {
   align-items: center;
 }
 
-.cart_list li .item .right_item .quantity_box .quantity_item {
+.quantity_item {
   text-align: center;
   width: 20px;
   background-color: transparent;
@@ -645,6 +648,9 @@ small{
 .heading-color{
     color: #6A231F;
 }
+.text-black{
+  color: #000;
+}
 .small-color{
     color: #026B3F;
 }
@@ -662,6 +668,9 @@ small{
 }
 .heading-family{
     font-family: var(--headings);
+}
+.heading-common{
+  font-family: var(--common);
 }
 .card-bg{
     background-color: #F59334;
