@@ -19,8 +19,8 @@ $(document).ready(function () {
 
 
     $(".nav_mobile").click(function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+        // e.preventDefault();
+        // e.stopPropagation();
         if (e.target == $(this)[0]) {
             $(this).removeClass("active");
         }
