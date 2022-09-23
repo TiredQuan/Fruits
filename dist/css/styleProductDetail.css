@@ -1,5 +1,5 @@
 .gallery-images{
-    width: 14%;
+    width: 70px;
     cursor: pointer;
     opacity: 0.6;
     transition: opacity 0.3s ease;
@@ -12,6 +12,10 @@
 }
 .gallery-products{
     height: 350px;
+}
+.gallery-products img{
+    object-fit: cover;
+    height: 100%;
 }
 
 .product-btn{
