@@ -7,6 +7,9 @@
 .gallery-images:hover{
     opacity: 1;
 }
+.current .img-products>a>img{
+    opacity: 1 !important;
+}
 .gallery-images:active{
     border: solid 2px black;
 }
