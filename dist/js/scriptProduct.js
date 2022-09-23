@@ -10,8 +10,6 @@ $(document).ready(function(){
     items:1,
     rewind:true,
     loop:true,
-    autoplay:true,
-    autoplayHoverPause:true,
     URLhashListener:true,
     responsiveRefreshRate : 200,
   }).on('changed.owl.carousel', syncPosition);
@@ -35,7 +33,9 @@ $(document).ready(function(){
     
     //if you disable loop you have to comment this block
     var count = el.item.count-1;
-    var current = Math.round(el.item.index - (el.item.count/2) - .5);
+    var current = el.item.index-2;
+    console.log(el.item.index)
+
     
     if(current < 0) {
       current = count;
