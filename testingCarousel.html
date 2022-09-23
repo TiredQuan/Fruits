@@ -36,43 +36,39 @@
     border-radius: 3px;
     text-align: center;
     cursor: pointer;
-  .current .item{
-    background: #0c83e7;
-  }
+}
+#sync2 .item .current .item{
+  background: #0c83e7;
+
 }
 
 
+.owl-theme .owl-nav [class*='owl-']{
+  transition: all .3s ease;
+} 
+.owl-theme .owl-nav [class*='owl-'].disabled:hover{
+  background-color: #D6D6D6;
+} 
 
-.owl-theme {
-  .owl-nav {
-    /*default owl-theme theme reset .disabled:hover links */
-    [class*='owl-'] {
-      transition: all .3s ease;
-      &.disabled:hover {
-       background-color: #D6D6D6;
-      }   
-    }
-    
-  }
-}
 
-//arrows on first carousel
-#sync1.owl-theme {
+/* arrows on first carousel */
+#sync1.owl-theme{
   position: relative;
-  .owl-next, .owl-prev {
+
+}
+#sync1.owl-theme .owl-next,#sync1.owl-theme .owl-prev  {
     width: 22px;
     height: 40px;
     margin-top: -20px;
     position: absolute;
     top: 50%;
   }
-  .owl-prev {
+  #sync1.owl-theme .owl-prev {
     left: 10px;
   }
-  .owl-next {
+  #sync1.owl-theme .owl-next {
     right: 10px;
   }
-}
     </style>
 </head>
 <body>

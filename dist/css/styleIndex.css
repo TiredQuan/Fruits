@@ -7,18 +7,18 @@ html {
     .flash-slider {
         position: relative;
       }
-  
+      
   
       .flash-slider .slick-prev {
         position: absolute;
-        top: 10px;
+        top: -20px;
         left: 460px;
         z-index: 999;
       }
   
       .flash-slider .slick-next {
         position: absolute;
-        top: 10px;
+        top: -20px;
         right: 15px;
         z-index: 999;
       }
