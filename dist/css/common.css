@@ -38,6 +38,8 @@
     --headings: "Josefin Sans", sans-serif;
     --common: "Nunito", sans-serif;
     --heading-small:"Waterfall", sans-serif;
+    --hug-width: 137px;
+    --hug-height: 34px;
 }
 
 *,*::after,*::before {
@@ -287,6 +289,13 @@ a {
 }
 .mobile_menu li a:hover{
   color: #8f561d;
+}
+
+.user-form input,.user-form textarea {
+  background-color : #E9E9E9; 
+}
+.user-form textarea{
+  resize: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -681,7 +690,12 @@ small{
 .footer-card{
     background-color: #026B3F;
 }
-
+.hug-height{
+  height: var(--hug-height);
+}
+.hug-width{
+  width: var(--hug-width);
+}
 .btn-custom-color{
     color: #F59334;
     border: 1px solid #F59334;
@@ -773,11 +787,11 @@ nav div> ul>li>a:hover{
     transform: translate(-50%,-50%);
 }
 .hero-bg h1{
-    left: 47%;
+    left: calc(50% - 25px);
     top: 50%;
 }
 .hero-bg h2{
-    left: 54%;
+    left: calc(50% + 30px);
     top: 60%;
 }
 .product-img{

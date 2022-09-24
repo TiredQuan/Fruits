@@ -1,0 +1,7 @@
+.custom-height{
+    height: 388px;
+}
+.user-form textarea{
+    resize: none;
+    height: 103px;
+  }

@@ -8,6 +8,7 @@ $(document).ready(function(){
 
   sync1.owlCarousel({
     items:1,
+    slideSpeed: 2000,
     rewind:true,
     loop:true,
     URLhashListener:true,
@@ -32,9 +33,10 @@ $(document).ready(function(){
     //var current = el.item.index;
     
     //if you disable loop you have to comment this block
+    // var count = el.item.count-1;
+    // var current = el.item.index-2;
     var count = el.item.count-1;
-    var current = el.item.index-2;
-    console.log(el.item.index)
+    var current = Math.round(el.item.index - (el.item.count/3) - .5);
 
     
     if(current < 0) {

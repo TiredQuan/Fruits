@@ -28,8 +28,11 @@
 .faded{
     opacity:0.6;
 }
-.hug{
-    height: 34px;
+.hug-height{
+    height: var(--hug-height);
+}
+.hug-width{
+    width: var(--hug-width);
 }
 .buy-btn{
     width: 157px;
@@ -55,9 +58,11 @@
     height: 46px;
     padding: 0;
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+.rate:not(:checked) > input { 
+    /* Input nó dùng top nên mỗi lần ấn nó nhảy trang lên top luôn, nên em bỏ */
+    /* position:absolute; */
+    /* top:-9999px; */
+    display: none;
 }
 .rate:not(:checked) > label {
     float:right;
@@ -72,7 +77,7 @@
     content: '★ ';
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+    color: #FFBC25;    
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
@@ -86,17 +91,13 @@
     color: #c59b08;
 }
 
-
-.user-form input[type="text"],.user-form input[type="email"],.user-form textarea {
-
-    background-color : #E9E9E9; 
-  
-  }
 .user-form textarea{
-    resize: none;
     height: 139px;
-}
+  }
 
+label{
+    margin: 0;
+}
 
 @media (max-width: 768px) { 
     .custom-px{
