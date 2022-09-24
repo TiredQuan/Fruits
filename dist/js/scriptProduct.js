@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    var sync1 = $(".product-gallery");
-    var sync2 = $(".img-gallery");
+    var sync1 = $("#product-gallery");
+    var sync2 = $("#img-gallery");
 
     
   var slidesPerPage = 6; //globaly define number of elements per page
@@ -9,8 +9,6 @@ $(document).ready(function(){
   sync1.owlCarousel({
     items:1,
     slideSpeed: 2000,
-    rewind:true,
-    loop:true,
     URLhashListener:true,
     responsiveRefreshRate : 200,
   }).on('changed.owl.carousel', syncPosition);
@@ -26,27 +24,11 @@ $(document).ready(function(){
     slideSpeed : 500,
     slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
     responsiveRefreshRate : 100
-  }).on('changed.owl.carousel', syncPosition2);
+  });
 
   function syncPosition(el) {
     //if you set loop to false, you have to restore this next line
-    //var current = el.item.index;
-    
-    //if you disable loop you have to comment this block
-    // var count = el.item.count-1;
-    // var current = el.item.index-2;
-    var count = el.item.count-1;
-    var current = Math.round(el.item.index - (el.item.count/3) - .5);
-
-    
-    if(current < 0) {
-      current = count;
-    }
-    if(current > count) {
-      current = 0;
-    }
-    
-    //end block
+    var current = el.item.index;
 
     sync2
       .find(".owl-item")
@@ -66,10 +48,10 @@ $(document).ready(function(){
   }
   
   function syncPosition2(el) {
-    if(syncedSecondary) {
-      var number = el.item.index;
-      sync1.data('owl.carousel').to(number, 100, true);
-    }
+    // if(syncedSecondary) {
+      // var number = el.item.index;
+      // sync1.data('owl.carousel').to(number, 100, true);
+    // }
   }
   
   sync2.on("click", ".owl-item", function(e){
