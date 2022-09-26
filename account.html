@@ -275,16 +275,86 @@
                         <h3 class="f-size-31 f-weight-500 mb-3">Đơn hàng của tôi</h3>
                         <ul class="d-flex mx-auto my-4">
                             <li class="mr-3">
-                              <a class="active heading-family px-0 f-size-18 f-weight-500 text-black text-decoration-none" type="button">Tất cả</a>
+                              <a class="active heading-family px-0 f-size-18 f-weight-500 text-black text-decoration-none tablinks" type="button" onclick="openCity(event,'tatca')">Tất cả</a>
                             </li>
                             <li class="mr-3">
-                              <a class="heading-family px-0 f-size-18 f-weight-500 text-black text-decoration-none" type="button">Đang giao</a>
+                              <a class="heading-family px-0 f-size-18 f-weight-500 text-black text-decoration-none tablinks" onclick="openCity(event,'danggiao')" type="button">Đang giao</a>
                             </li>
                             <li class="mr-3">
-                              <a class="heading-family px-0 f-size-18 f-weight-500 text-black text-decoration-none" type="button">Đã giao</a>
+                              <a class="heading-family px-0 f-size-18 f-weight-500 text-black text-decoration-none tablinks" onclick="openCity(event,'dagiao')" type="button">Đã giao</a>
                             </li>
                         </ul>
-                        <div class="">
+                        <div class="tabcontent" id="tatca">
+                            <!-- LIST đơn hàng -->
+                            <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
+                                <div class="d-flex flex-row">
+                                    <img class="cart-img" src="dist/images/gallery1.png" alt="">
+                                    <div class="ml-4">
+                                        <h4 class="f-weight-500 f-size-18 text-uppercase">Chery Canada</h4>
+                                        <p class="f-weight-400 f-size-17 custom-color mb-2">Giá trị: 1.900.000đ</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Ngày: 05/09/22</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Trạng thái: Đã giao</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn list-btn text-uppercase btn-custom-color rounded-0 mb-3">Mua lại</button>
+                                    <br>
+                                    <button class="btn list-btn text-uppercase btn-custom-color2 text-white rounded-0">Liên hệ</button>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
+                                <div class="d-flex flex-row">
+                                    <img class="cart-img" src="dist/images/gallery1.png" alt="">
+                                    <div class="ml-4">
+                                        <h4 class="f-weight-500 f-size-18 text-uppercase">Chery Canada</h4>
+                                        <p class="f-weight-400 f-size-17 custom-color mb-2">Giá trị: 1.900.000đ</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Ngày: 05/09/22</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Trạng thái: Đã giao</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn list-btn text-uppercase btn-custom-color rounded-0 mb-3">Mua lại</button>
+                                    <br>
+                                    <button class="btn list-btn text-uppercase btn-custom-color2 text-white rounded-0">Liên hệ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabcontent" id="danggiao">
+                            <!-- LIST đơn hàng -->
+                            <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
+                                <div class="d-flex flex-row">
+                                    <img class="cart-img" src="dist/images/gallery1.png" alt="">
+                                    <div class="ml-4">
+                                        <h4 class="f-weight-500 f-size-18 text-uppercase">Chery Canada</h4>
+                                        <p class="f-weight-400 f-size-17 custom-color mb-2">Giá trị: 1.900.000đ</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Ngày: 05/09/22</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Trạng thái: Đã giao</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn list-btn text-uppercase btn-custom-color rounded-0 mb-3">Mua lại</button>
+                                    <br>
+                                    <button class="btn list-btn text-uppercase btn-custom-color2 text-white rounded-0">Liên hệ</button>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
+                                <div class="d-flex flex-row">
+                                    <img class="cart-img" src="dist/images/gallery1.png" alt="">
+                                    <div class="ml-4">
+                                        <h4 class="f-weight-500 f-size-18 text-uppercase">Chery Canada</h4>
+                                        <p class="f-weight-400 f-size-17 custom-color mb-2">Giá trị: 1.900.000đ</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Ngày: 05/09/22</p>
+                                        <p class="f-weight-400 f-size-15 mb-2">Trạng thái: Đã giao</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn list-btn text-uppercase btn-custom-color rounded-0 mb-3">Mua lại</button>
+                                    <br>
+                                    <button class="btn list-btn text-uppercase btn-custom-color2 text-white rounded-0">Liên hệ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabcontent" id="dagiao">
                             <!-- LIST đơn hàng -->
                             <div class="d-flex flex-column flex-sm-row justify-content-between mb-4">
                                 <div class="d-flex flex-row">
@@ -379,5 +449,6 @@
     <script src="dist/bootstrap/js/popper.min.js"></script>
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
     <script src="dist/js/navigation.js"></script>
+    <script src="dist/js/scriptTab.js"></script>
     </body>
     </html>
