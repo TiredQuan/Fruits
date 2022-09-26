@@ -698,6 +698,7 @@ small{
 }
 .btn-custom-color{
     color: #F59334;
+    background-color: transparent;
     border: 1px solid #F59334;
 }
 

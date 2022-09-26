@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dist/css/common.css">
-    <link rel="stylesheet" href="dist/css/styleContact.css">
-    <title>Contact</title>
+    <link rel="stylesheet" href="dist/css/styleCheckout.css">
+    <title>Checkout</title>
 </head>
 <body>
 
@@ -254,19 +254,18 @@
 <!-- nav_mobile -->
 </header>
 
-
 <main class="seperate-footer">
     <section class="hero-bg position-relative w-100">
-        <h1 class="f-size-31 text-white">LIÊN HỆ</h1>
+        <h1 class="f-size-31 text-white">ĐẶT HÀNG</h1>
         <h2 class="f-size-64 custom-color"><small>Fruits store</small></h2>
     </section>
     <section class="container my-5">
-        <div class="row justify-content-between">
-            <div class="col-lg-4 user-form mt-4">
-                <h3 class="f-size-31 f-weight-500 mb-3">Để lại lời nhắn</h3>
+        <div class="row">
+            <div class="col-lg-4 offset-lg-1 user-form mt-4">
+                <h3 class="f-size-31 f-weight-500 mb-3">Thông tin nhận hàng</h3>
                 <form action="">
                     <div class="form-group">
-                      <label for="userName">Tên của bạn</label>
+                      <label for="userName">Họ và tên</label>
                       <input type="text" class="rounded-0 form-control" name="userName" id="userName">
                     </div>
                     <div class="form-group">
@@ -274,21 +273,92 @@
                       <input type="text" class="rounded-0 form-control" min="0" name="userPhoneNum" id="userPhoneNum">
                     </div>
                     <div class="form-group">
-                      <label for="userEmail">Địa chỉ Email</label>
+                      <label for="userEmail">Email</label>
                       <input type="email" class="rounded-0 form-control" name="userEmail" id="userEmail">
+                    </div>
+                    <div class="form-group">
+                      <label for="userCity">Tỉnh/ Thành phố</label>
+                      <input type="text" class="rounded-0 form-control" name="userCity" id="userCity">
+                    </div>
+                    <div class="form-group">
+                      <label for="userProvince">Quận/ Huyện</label>
+                      <input type="text" class="rounded-0 form-control" name="userProvince" id="userProvince">
+                    </div>
+                    <div class="form-group">
+                      <label for="userWard">Phường/ Xã/ Thị trấn</label>
+                      <input type="text" class="rounded-0 form-control" name="userWard" id="userWard">
+                    </div>
+                    <div class="form-group">
+                      <label for="userAddress">Địa chỉ cụ thể</label>
+                      <input type="text" class="rounded-0 form-control" name="userAddress" id="userAddress">
                     </div>
                     <div class="form-group">
                       <label for="comment">Lời nhắn</label>
                       
                       <textarea class="form-control rounded-0" id="comment"></textarea>
                     </div>
-                    <button type="submit" class="btn hug-height hug-width f-weight-500 f-size-14 btn-custom-color2 text-white rounded-0">Gửi</button>
-                  </form>
+                  </form>   
             </div>
-            <div class="col-lg-7 my-4 row mx-auto mt-4">
-                <div class="col custom-height px-2"><img class="h-100 w-100" src="dist/images/contact-img1.png" alt=""></div>
-                <div class="col custom-height px-2"><img class="h-100 w-100" src="dist/images/contact-img2.png" alt=""></div>
-                <div class="col custom-height px-2"><img class="h-100 w-100" src="dist/images/contact-img3.png" alt=""></div>
+            <div class="col-lg-6 offset-lg-1">
+                <div class="w-100 fruit-card">
+                    <div class="col-8  mx-auto py-3">
+                        <!-- FIX THIS LATER IF NEED BE -->
+                        <form class="discount-form" action="">
+                            <label for="discount" class="f-weight-400 f-size-17">Mã giảm giá</label>
+                            <div class="form-group d-flex">
+                                <input type="text" name="discount" class="mr-2 border-0 form-control rounded-0" id="discount">
+                                <button class="ml-2 btn-custom-color text-uppercase">Áp dụng</button>
+                            </div>
+                        </form>
+                        <h4 class="f-weight-500 f-size-31 mt-3">Thông tin đơn hàng</h4>
+                        <div class="f-size-17 f-weight-400">
+                            <div class="d-flex justify-content-between discount-data">
+                                <p>Mã vận đơn</p>
+                                <p>PG54321</p>
+                            </div>
+                            <div class="d-flex justify-content-between discount-data">
+                                <p>Giá sản phẩm</p>
+                                <p>2.300.000đ</p>
+                            </div>
+                            <div class="d-flex justify-content-between discount-data">
+                                <p>Phí vận chuyển</p>
+                                <p>-</p>
+                            </div>
+                            <div class="d-flex justify-content-between discount-data">
+                                <p>Giảm giá</p>
+                                <p>-</p>
+                            </div>
+                            <div class="d-flex justify-content-between f-size-18 f-weight-500">
+                                <p>Tạm tính</p>
+                                <p>2.300.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h5 class="f-weight-500 f-size-31 mt-3">Thông tin vận chuyển</h5>
+                    <p class="my-4">Ship COD (nhận hàng sau 1-2 tiếng)</p>
+                </div>
+                <div class="col-sm-8 p-0">
+                    <h5 class="f-weight-500 f-size-31 mt-3">Thanh toán</h5>
+                    <form action="">
+                        <label class="checkbox f-weight-400 f-size-17 mt-3">Thanh toán khi nhận hàng
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox f-weight-400 f-size-17 mt-3">Thẻ tín dụng
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="check-info f-weight-400 f-size-13">TPBank - 0559 8176 601- Nguyen Thi Phuong Nội dung chuyển khoản: Họ tên + Mã vận đơn</p>
+                        <label class="checkbox f-weight-400 f-size-17 mt-3">Momo
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="check-info f-weight-400 f-size-13">0974000445</p>
+                        <button class="btn rounded-0 text-white btn-custom-color2 text-uppercase w-100 f-weight-500 f-size-14 check-btn mt-3" type="submit">Đặt hàng</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

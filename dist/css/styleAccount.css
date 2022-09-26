@@ -9,3 +9,13 @@
     width: 157px;
     height: 106px;
 }
+.list-btn{
+    width: 157px;
+    height: 42px;
+}
+
+@media  (max-width: 576px) {
+    .list-btn{
+        width: 100%;
+    }
+}
